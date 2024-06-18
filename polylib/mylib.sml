@@ -9,3 +9,5 @@ fun zip (x::xs, y::ys)  = x :: zip(y::ys,xs)
 |   zip ([], y::ys)     = y::ys
 |   zip (x::xs,[])      = x::xs;
 
+ datatype tree = leaf of int | node of int*tree*tree
+
